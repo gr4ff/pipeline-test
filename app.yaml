@@ -1,6 +1,4 @@
-#application: s~molly-123
-
-application: s~beaming-team-327
+application: s~molly-123
 #application: e~testeu123
 version: rpc-1
 runtime: python27
@@ -14,9 +12,6 @@ inbound_services:
 builtins:
 - deferred: on
 - remote_api: on
-
-env_variables:
-  GAE_USE_SOCKETS_HTTPLIB : 'true'
 
 libraries:
 - name: webapp2
@@ -37,12 +32,6 @@ handlers:
 #- url: .*
 #  script: bquery.app
 #  login: optional
-- url: /rpc.*
-  script: rpc.app
-
-- url: /_ah/bounce
-  script: handle_bounced_email.app
-  login: admin
 
 - url: /.*
   script: main.app
