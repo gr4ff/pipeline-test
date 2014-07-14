@@ -9,7 +9,7 @@ inbound_services:
 - warmup
 - mail_bounce
 
-builtins:
+builtinsa:
 - deferred: on
 - remote_api: on
 
