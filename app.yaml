@@ -1,6 +1,6 @@
 application: s~molly-123
 #application: e~testeu123
-version: rpc-1
+version: rpc-2
 runtime: python27
 api_version: 1
 threadsafe: no
